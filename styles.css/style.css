@@ -187,7 +187,6 @@ main {
 
 .contenedorAbout {
   background-color: var(--negro);
-  border-top: 1px solid rgb(255, 255, 255);
 }
 
 @media (min-width: 1200px) {
@@ -381,6 +380,87 @@ main {
 .icono_texto2{
   color: var(--gris);
 }
+
+
+/************** ( 'PORTFOLIO' ) **************/
+
+.gridServices {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+
+
+/* PORTFOLIO CARD */
+.card {
+  position: relative;
+  max-width : 300px;
+  height : 215px;  
+  background-color : #fff;
+  margin : 30px 10px;
+  padding : 20px 15px;
+  
+  display : flex;
+  flex-direction : column;
+  box-shadow : 0 5px 20px rgba(0,0,0,0.5);
+  transition : 0.3s ease-in-out;
+  border-radius : 15px;
+}
+.card:hover {
+  height : 280px;    
+}
+.card h2 {
+  margin-bottom: 0;
+  font-family: var(--fuente2);
+  font-weight: bold;
+}
+
+.card p {
+  margin-bottom: 0;
+}
+
+
+.card .image {
+  position : relative;
+  width : 260px;
+  height : 260px;
+  
+  top : -40%;
+  left: 8px;
+  box-shadow : 0 5px 20px rgba(0,0,0,0.2);
+  z-index : 1;
+}
+
+.card .image img {
+  max-width : 100%;
+  border-radius : 15px;
+}
+
+.card .content {
+  position : relative;
+  top : -140px;
+  padding : 10px 15px;
+  color : #111;
+  text-align : center;
+  
+  visibility : hidden;
+  opacity : 0;
+  transition : 0.3s ease-in-out;
+    
+}
+
+.card:hover .content {
+   margin-top : 45px;
+   visibility : visible;
+   opacity : 1;
+   transition-delay: 0.2s;
+  
+}
+
+
+
+
+
 
 
 
