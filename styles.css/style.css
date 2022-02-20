@@ -5,7 +5,7 @@
   --verde: #cbec13;
   --verdeOscuro: #8ba10f;
   --negro: #000;
-  --gris: #6e6e6e;
+  --gris: #919191;
   --blanco: #ffffff;
 }
 
@@ -190,9 +190,10 @@ main {
   border-top: 1px solid rgb(255, 255, 255);
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1200px) {
   .contenedorAbout {
-    height: 100vh;
+    padding-top: 15rem!important;
+    padding-bottom: 10rem!important;
   }
 }
 
@@ -205,7 +206,7 @@ main {
 
 @media (min-width: 768px) {
     .titleAbout{
-      padding-top: 10rem;
+      padding-top: 8rem;
     }
 }
 
@@ -238,10 +239,17 @@ main {
 }
 
 .skill {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   background-size: cover;
   filter: grayscale();
+}
+
+@media (min-width: 768px) {
+  .skill {
+    width: 80px;
+    height: 80px;
+  }
 }
 
 .skill1 {
@@ -304,6 +312,90 @@ main {
 }
 
 
+/************** ( 'TITLE SERVICES' ) **************/
+
+.tittleServices {
+  font-size: 5rem;
+  font-family: var(--fuente1);
+  font-weight: bold;
+  margin-bottom: 10rem;
+}
+
+@media (min-width: 768px) {
+    .tittleServices{
+      padding-top: 8rem;
+    }
+}
+
+@media (min-width: 1200px) {
+  .tittleServices{
+    padding-top: 0rem;
+  }
+}
+
+
+
+.containerServices{
+  height: 300px;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+@media (min-width: 992px) {
+  .containerServices{
+    height: 400px;
+  } 
+}
+@media (min-width: 1200px) {
+  .containerServices{
+    height: 300px;
+  } 
+}
+
+.service1Img {
+  max-width: 100px;
+}
+
+.icono {
+  color: #bdbdbd;
+  font-size: 8rem;
+}
+.icono:hover,
+.icono_texto2:hover {
+  color: #cbec13;
+  transform: scale(1.1);
+}
+.containerServices:hover {
+  /* border-bottom: 4px solid var(--verde) */
+  border-bottom: 4px solid;
+  border-image: linear-gradient(to right, #cbec13, rgb(255, 255, 255));
+  border-image-slice: 2;
+  color: white;
+  margin: auto;
+}
+
+.icono_texto{
+  color: white;
+  font-weight: bold;
+  padding-top: 1rem;
+}
+.icono_texto2{
+  color: var(--gris);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -325,4 +417,3 @@ main {
 .simplescrollup__button--hide {
   transform: translateX(100px);
 }
-
