@@ -380,6 +380,18 @@ main {
 .card p {
   margin-bottom: 0;
 }
+
+.card .git {
+  color: #0000ff;
+  font-weight: bold;
+}
+
+.card a {
+  text-decoration: none;
+  font-weight: bold;
+  color:#ff0606
+}
+
 .card .image {
   position: relative;
   width: 260px;
