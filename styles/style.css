@@ -218,7 +218,7 @@ main {
   width: 80px;
   height: 80px;
   background-size: cover;
-  filter: grayscale();
+  
 }
 @media (min-width: 768px) {
   .skill {
@@ -228,6 +228,9 @@ main {
 }
 .skill1 {
   background-image: url(../img/iconsskills/html.png);
+}
+.skill1a {
+  background-image: url(../img/iconsskills/react\ .png);
 }
 .skill2 {
   background-image: url(../img/iconsskills/css.png);
@@ -278,7 +281,7 @@ main {
   background-image: url(../img/iconsskills/apache.png);
 }
 .gridSkills > div:hover {
-  filter: inherit;
+  filter: grayscale();
   transform: scale(1.1);
   transition: 0.5s;
 }
